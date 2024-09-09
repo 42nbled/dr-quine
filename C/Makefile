@@ -28,7 +28,7 @@ all: $(COLLEEN_NAME) $(GRACE_NAME) $(SULLY_NAME)
 
 fclean:
 	@echo "\033[0;34mCleaning all executables and generated files...\033[0m"
-	rm -f $(COLLEEN_NAME) $(GRACE_NAME) $(SULLY_NAME) Sully_*.c Sully_* Grace_kid.c
+	rm -f $(COLLEEN_NAME) $(GRACE_NAME) $(SULLY_NAME) Sully_*.c Sully_* Grace_kid.c tmp_Colleen
 	@echo "\033[0;32mFull clean done.\033[0m"
 
 re: fclean all
