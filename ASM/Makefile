@@ -9,8 +9,8 @@ SULLY_SRCS = Sully.s
 CC = nasm
 CFLAGS = -f elf64 -g -F dwarf -DPIC
 
-LINKER = gcc
-LDFLAGS = -no-pie   # Ensure no position-independent code is generated for simplicity
+LINKER = ld
+LDFLAGS = -lc -I /lib64/ld-linux-x86-64.so.2
 
 $(COLLEEN_NAME): $(COLLEEN_SRCS)
 	@echo "\033[0;34mCompiling $(COLLEEN_NAME)...\033[0m"
